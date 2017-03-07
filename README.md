@@ -1,6 +1,6 @@
 # NopioScaffold
 
-This is the resulting gem of this tutorial: https://www.nopio.com/blog/creating-your-own-scaffold-generator-in-rails/.
+This is the resulting gem of this tutorial: https://www.nopio.com/blog/creating-scaffold-generator-rails/.
 
 ## Installation
 
