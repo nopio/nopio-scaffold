@@ -1,0 +1,12 @@
+<div>
+<% editable_attributes.each do |attribute| -%>
+  <dl class="row">
+    <dt class="col-sm-3"><%= attribute.human_name.titleize %>:</dt>
+    <dd class="col-sm-9"><%= "<%= @#{singular_name}.#{attribute.name} %%>" %></dd>
+  </dl>
+<% end -%>
+</div>
+<p>
+  <%= "<%= link_to 'Edit', edit_#{singular_name}_path(@#{singular_name}), class: 'btn btn-sm btn-outline-info' %%>" %>
+  <%= "<%= link_to 'Destroy', #{singular_name}_path(@#{singular_name}), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-outline-danger' %%>" %>
+</p>

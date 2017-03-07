@@ -1,0 +1,19 @@
+<%= "<%= link_to 'Create new', new_#{singular_name}_path, class: 'btn btn-primary btn-sm mb-2' %%>" %>
+
+<table class="table table-sm">
+  <tbody>
+    <%= "<% @#{plural_name}.each do |#{singular_name}| %%>" %>
+    <tr>
+      <td> <%= "<%= #{singular_name}.id %%>" %> </td>
+      <td> [ADD INFO] </td>
+      <td>
+<% if show_action? -%>
+          <%= "<%= link_to 'Show', #{singular_name}_path(#{singular_name}), class: 'btn btn-sm btn-outline-info' %%>" %>
+<% end -%>
+          <%= "<%= link_to 'Edit', edit_#{singular_name}_path(#{singular_name}), class: 'btn btn-sm btn-outline-info' %%>" %>
+          <%= "<%= link_to 'Destroy', #{singular_name}_path(#{singular_name}), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-outline-danger' %%>" %>
+      </td>
+    </tr>
+    <%= "<% end %%>" %>
+  </tbody>
+</table>
