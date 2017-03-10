@@ -7,7 +7,7 @@ This is the resulting gem of this tutorial: https://www.nopio.com/blog/creating-
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nopio_scaffold', git: 'git://https://github.com/nopio/nopio-scaffold.git'
+gem 'nopio_scaffold', git: 'https://github.com/nopio/nopio-scaffold.git'
 ```
 
 And then execute:
